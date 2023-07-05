@@ -300,7 +300,7 @@ function App() {
       plotOptions: {
         line: {
           cursor: 'pointer',
-          lineWidth: 2,
+          lineWidth: 4,
           marker: {
             enabled: true,
             radius: 0,
@@ -320,7 +320,7 @@ function App() {
                 size: 0
               },
               enabled: true,
-              lineWidth: 2
+              lineWidth: 4
             }
           }
         }
