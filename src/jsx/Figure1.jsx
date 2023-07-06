@@ -147,6 +147,13 @@ function App() {
     }
   }, [cleanData]);
 
+  useEffect(() => {
+    const el = document.querySelector('[href="/data-visualization-search"]');
+    if (el) {
+      el.href = '/wir2023';
+    }
+  }, []);
+
   const createChart = useCallback(() => {
     chart = Highcharts.chart('highchart-container', {
       chart: {
