@@ -203,10 +203,10 @@ function App() {
       exporting: {
         buttons: {
           contextButton: {
-            text: '',
             menuItems: ['viewFullscreen', 'separator', 'downloadPNG', 'downloadPDF', 'separator', 'downloadCSV'],
             symbol: 'download',
-            symbolFill: '#000'
+            symbolFill: '#000',
+            text: ''
           }
         },
         chartOptions: {
@@ -217,7 +217,7 @@ function App() {
               color: 'rgba(0, 0, 0, 0.8)',
               fontSize: '14px'
             },
-            text: '<em>Source:</em> UNCTAD World Investment Report 2022',
+            text: '<em>Source:</em> UNCTAD World Investment Report 2023',
             verticalAlign: 'bottom',
             x: 0
           },
@@ -228,8 +228,8 @@ function App() {
                 this.renderer.image('https://storage.unctad.org/2023-wir_report/assets/img/unctad_logo.svg', 5, 15, 100, 100).add();
               }
             },
-            marginTop: null,
-            height: 600
+            height: 600,
+            marginTop: null
           },
           legend: {
             enabled: true
@@ -539,21 +539,22 @@ function App() {
   };
 
   const search = (event) => {
+    const visible_tmp = {};
     activeData.map(area => {
       if (event.target.value === '') {
-        visible[area.name] = true;
+        visible_tmp[area.name] = true;
       } else if (area.name.toLowerCase().includes(event.target.value.toLowerCase()) === true) {
-        visible[area.name] = true;
+        visible_tmp[area.name] = true;
         area.parents.map((parent) => {
-          visible[parent] = true;
+          visible_tmp[parent] = true;
           return true;
         });
       } else {
-        visible[area.name] = false;
+        visible_tmp[area.name] = false;
       }
       return true;
     });
-    setVisible(visible);
+    setVisible(visible_tmp);
   };
 
   // Not used.
