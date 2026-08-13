@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer_content anchor_videos" id="anchor_videos">
               <h3>Watch the videos</h3>
               <div className="iframe_container youtube_iframe">
-                <iframe src="https://www.youtube.com/embed/duZBRPcX9mo" title="Wold Investment Report" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/>
+                <iframe src="https://www.youtube.com/embed/duZBRPcX9mo" title="Wold Investment Report" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />
               </div>
               <ul>
                 <li>
@@ -51,7 +51,7 @@ function Footer() {
               </ul>
               <h4>Watch the press conference</h4>
               <div className="iframe_container youtube_iframe">
-                <iframe src="https://www.youtube.com/embed/rUR6isHC8MI" title="Wold Investment Report Press Conference" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/>
+                <iframe src="https://www.youtube.com/embed/rUR6isHC8MI" title="Wold Investment Report Press Conference" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />
               </div>
             </div>
             <div className="footer_content anchor_podcasts" id="anchor_podcasts">
